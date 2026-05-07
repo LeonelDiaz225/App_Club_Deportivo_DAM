@@ -11,6 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.App_Club_Deportivo">
+
+        <activity
+            android:name=".PrincipalActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

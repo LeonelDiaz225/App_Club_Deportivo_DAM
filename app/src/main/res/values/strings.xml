@@ -5,4 +5,10 @@
     <string name="login_value_hint">Value</string>
     <string name="login_sign_in">Sign In</string>
     <string name="login_forgot_password">Forgot password?</string>
+
+    <string name="principal_name">Name</string>
+    <string name="principal_role">Administrator</string>
+    <string name="btn_socios">SOCIOS</string>
+    <string name="btn_no_socios">NO SOCIOS</string>
+    <string name="profile_icon_desc">Profile Icon</string>
 </resources>
