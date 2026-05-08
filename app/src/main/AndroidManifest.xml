@@ -33,6 +33,41 @@
             android:theme="@style/Theme.App_Club_Deportivo" />
 
         <activity
+            android:name=".AltaDeSociosActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
+        <activity
+            android:name=".AptoFisicoActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
+        <activity
+            android:name=".BajaDeSociosActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
+        <activity
+            android:name=".GenerarCarnetActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
+        <activity
+            android:name=".GenerarComprobanteActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
+        <activity
+            android:name=".GestionDeNoSociosActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
+        <activity
+            android:name=".PagarActividadActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
