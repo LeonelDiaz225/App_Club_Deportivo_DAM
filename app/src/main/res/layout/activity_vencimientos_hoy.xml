@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".VencimientosHoyActivity">
+
+
+    <View
+        android:id="@+id/headerBackground"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#F5F0FF"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintBottom_toBottomOf="@id/headerBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/headerBackground" />
+
+    <ImageView
+        android:id="@+id/ivUserIcon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_profile_placeholder"
+        app:layout_constraintBottom_toBottomOf="@id/headerBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/headerBackground" />
+
+
+    <!-- Boton Volver -->
+    <LinearLayout
+        android:id="@+id/btn_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBackground">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:text="Volver"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivLogoFitness"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/img_logo_fitness"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerBackground" />
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Vencimientos hoy"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivLogoFitness" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="#FAF7FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:background="#D9D9D9"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvFechaActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha actual"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginBottom="15dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Apellido"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nombre"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DNI"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:text="Cuota"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/containerVencimientosList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
