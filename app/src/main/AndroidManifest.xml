@@ -18,6 +18,11 @@
             android:theme="@style/Theme.App_Club_Deportivo" />
 
         <activity
+            android:name=".GestionDeSociosActivity"
+            android:exported="false"
+            android:theme="@style/Theme.App_Club_Deportivo" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".GestionDeSociosActivity">
+
+    <!-- Header bar area -->
+    <View
+        android:id="@+id/header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#F3EEF5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:padding="12dp"
+        android:src="@android:drawable/ic_menu_sort_by_size"
+        app:tint="#49454F"
+        app:layout_constraintBottom_toBottomOf="@id/header_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_bg" />
+
+    <ImageView
+        android:id="@+id/btn_profile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:padding="12dp"
+        android:src="@android:drawable/ic_menu_myplaces"
+        app:tint="#49454F"
+        app:layout_constraintBottom_toBottomOf="@id/header_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/header_bg" />
+
+    <!-- Back button -->
+    <LinearLayout
+        android:id="@+id/btn_volver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_bg">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#000000" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:text="Volver"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Gestion de SOCIOS"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/iv_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_volver" />
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="24dp"
+        android:src="@android:drawable/ic_menu_gallery"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_volver" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="@drawable/card_border"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo">
+
+        <Button
+            android:id="@+id/btn_alta_socio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E8DEF8"
+            android:text="Alta Socio"
+            android:textAllCaps="false"
+            android:textColor="#1D192B"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_baja_socio"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E8DEF8"
+            android:text="Baja socio"
+            android:textAllCaps="false"
+            android:textColor="#1D192B"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_apto_fisico"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E8DEF8"
+            android:text="Apto fisico"
+            android:textAllCaps="false"
+            android:textColor="#1D192B"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_generar_carnet"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E8DEF8"
+            android:text="Generar Carnet"
+            android:textAllCaps="false"
+            android:textColor="#1D192B"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_pagar_cuota"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E8DEF8"
+            android:text="Pagar cuota"
+            android:textAllCaps="false"
+            android:textColor="#1D192B"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/btn_vencimientos"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:backgroundTint="#E8DEF8"
+            android:text="Vencimientos\ncuotas hoy"
+            android:textAllCaps="false"
+            android:textColor="#1D192B"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
