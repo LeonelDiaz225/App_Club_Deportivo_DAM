@@ -7,7 +7,6 @@
     android:background="#FFFFFF"
     tools:context=".GenerarCarnetActivity">
 
-    <!-- Encabezado -->
     <View
         android:id="@+id/header_bg"
         android:layout_width="match_parent"
@@ -38,7 +37,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/header_bg" />
 
-    <!-- Boton Volver -->
     <LinearLayout
         android:id="@+id/btn_volver"
         android:layout_width="wrap_content"
@@ -67,7 +65,6 @@
             android:textColor="#000000"/>
     </LinearLayout>
 
-    <!-- Titulo -->
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
@@ -81,7 +78,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btn_volver" />
 
-    <!-- Imagen de Logo -->
     <ImageView
         android:id="@+id/iv_logo"
         android:layout_width="80dp"
@@ -92,7 +88,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tv_title" />
 
-    <!-- Cuadro principal con borde -->
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"

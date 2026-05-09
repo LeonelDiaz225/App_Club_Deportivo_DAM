@@ -7,7 +7,6 @@
     android:background="#FFFFFF"
     tools:context=".GestionDeSociosActivity">
 
-    <!-- Header bar area -->
     <View
         android:id="@+id/header_bg"
         android:layout_width="match_parent"
@@ -39,7 +38,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/header_bg" />
 
-    <!-- Back button -->
     <LinearLayout
         android:id="@+id/btn_volver"
         android:layout_width="wrap_content"
