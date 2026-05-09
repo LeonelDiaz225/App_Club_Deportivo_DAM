@@ -250,8 +250,6 @@
                 android:textColor="#FFFFFF"
                 android:layout_gravity="center_horizontal"
                 android:paddingHorizontal="32dp"
-                android:shape="rectangle"
-                app:cornerRadius="20dp"
                 android:textAllCaps="true"/>
 
         </LinearLayout>
